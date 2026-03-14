@@ -1,5 +1,5 @@
-# Use a specific, lightweight Node.js base image
-FROM node:22-alpine
+# is node ki dependency "node:14" thi
+FROM node:14
 
 # Set the working directory inside the container
 WORKDIR /app
