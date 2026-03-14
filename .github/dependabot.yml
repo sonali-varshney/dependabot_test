@@ -1,1 +1,25 @@
-abc
+version: 2 #dependabot config version
+updates:
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "maven"  #type of package or dependency
+    directory: "/"              #dependency file location.So pom.xml is present at root so /
+    schedule:
+      interval: "daily"         #when to run dependabot. it can be weekly,daily
+      day: "monday"             #to run on a specific day
+    labels:
+      - "dependencies"
+
+  - package-ecosystem: "docker"
+    directory: "/infra"
+    schedule:
+      interval: "daily"
+      
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "daily"
