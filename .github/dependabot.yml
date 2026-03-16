@@ -5,6 +5,11 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    labels:
+      - "securitiessss"
+    reviewers:
+      - "sonali-varshney"
+      - "Copilot"
 
   - package-ecosystem: "maven"  #type of package or dependency
     directory: "/"              #dependency file location.So pom.xml is present at root so /
