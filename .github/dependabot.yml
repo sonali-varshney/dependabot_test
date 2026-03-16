@@ -13,6 +13,7 @@ updates:
       day: "monday"             #to run on a specific day
     labels:
       - "dependencies"
+      - "securitiessss"
 
   - package-ecosystem: "docker"
     directory: "/infra"
